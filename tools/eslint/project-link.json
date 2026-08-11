@@ -1,0 +1,15 @@
+{
+  "tool": "eslint",
+  "platform_tool_name": "eslint",
+  "customer_version": "12",
+  "linked_project": "Node.js + Express REST API (monolith root)",
+  "npm_script": "lint",
+  "project_targets": [
+    "src/**/*.js",
+    "test/**/*.js"
+  ],
+  "config_files": [
+    ".eslintrc.cjs"
+  ],
+  "run_from": "repository root"
+}

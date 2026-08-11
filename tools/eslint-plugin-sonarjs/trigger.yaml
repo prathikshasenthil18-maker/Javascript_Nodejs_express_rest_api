@@ -1,0 +1,14 @@
+tool: eslint-plugin-sonarjs
+language: javascript
+language_version: "12.0.0"
+customer_version: "12"
+project_type: "Node.js + Express REST API"
+scenario: "1 - Monolithic"
+technique: "Code Quality Auditing"
+classification: "Cognitive Complexity"
+platform_tool_name: "eslint-sonarjs"
+project_link: true
+run:
+  command: "bash tools/eslint-plugin-sonarjs/run.sh"
+  npm_script: "lint:sonarjs"
+  cwd: "repository_root"

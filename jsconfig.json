@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "commonjs",
+    "checkJs": false
+  },
+  "include": [
+    "src/**/*",
+    "test/**/*",
+    "tool-fixtures/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "coverage"
+  ]
+}
