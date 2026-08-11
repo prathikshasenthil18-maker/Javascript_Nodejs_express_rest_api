@@ -1,0 +1,6 @@
+node_modules
+coverage
+.nyc_output
+reports
+.git
+_generate_express.py
