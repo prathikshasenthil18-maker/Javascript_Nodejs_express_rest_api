@@ -1,0 +1,12 @@
+{
+  "tool": "diff-cover",
+  "files": [
+    "README.md",
+    "trigger.yaml",
+    "project-link.json",
+    "version-data.json",
+    "run.sh"
+  ],
+  "links_to_project": true,
+  "customer_version": "20"
+}

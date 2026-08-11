@@ -1,0 +1,8 @@
+{
+  "tool": "npm-audit",
+  "customer_version": "20",
+  "language_version": "20.0.0",
+  "syntax": "ES2023 / Node.js 20",
+  "golden_reference": "Golden_Repo_Lite/Javascript_20.0.0/npm-audit",
+  "excel_source": "Final_Enterprise_Mapping_Matrix 1.xlsx / JavaScript / Node.js + Express REST API"
+}
