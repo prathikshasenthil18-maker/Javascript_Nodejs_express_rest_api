@@ -1,0 +1,57 @@
+{
+  "name": "javascript-nodejs-express-rest-api-node18",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Scenario 1 Monolithic Node.js + Express REST API \u2014 Customer Version 18 (ES2022 / Node.js 18). Tools: diff-cover, eslint, eslint-plugin-security, eslint-plugin-sonarjs, jscpd, lizard, mocha, npm-audit, npm-ls, nyc, pydriller, stryker-js.",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "prebuild": "node scripts/version-check.js",
+    "build": "node scripts/build.js",
+    "start": "node dist/server.js",
+    "start:dev": "node src/server.js",
+    "test": "mocha",
+    "test:coverage": "nyc --reporter=text --reporter=lcov --reporter=json-summary mocha",
+    "lint": "eslint \"src/**/*.js\" \"test/**/*.js\"",
+    "lint:security": "eslint -c .eslintrc.security.cjs \"src/**/*.js\" \"tool-fixtures/**/*.js\"",
+    "lint:sonarjs": "eslint -c .eslintrc.sonarjs.cjs \"src/**/*.js\" \"tool-fixtures/**/*.js\"",
+    "jscpd": "jscpd --config .jscpd.json src tool-fixtures",
+    "stryker": "stryker run stryker.conf.json",
+    "audit": "npm audit --json",
+    "ls": "npm ls --all --json",
+    "lizard": "lizard src tool-fixtures",
+    "pydriller": "python tools/pydriller/run.py",
+    "diff-cover": "diff-cover coverage/lcov.info --html-report coverage/diff-cover.html",
+    "tools:list": "node -e \"console.log(require('./tool-matrix.json').tools.join('\\n'))\"",
+    "tools:all": "npm run lint && npm run lint:security && npm run lint:sonarjs && npm run jscpd && npm test && npm run test:coverage && npm run audit && npm run ls && npm run stryker",
+    "tool:diff-cover": "bash tools/diff-cover/run.sh",
+    "tool:eslint": "bash tools/eslint/run.sh",
+    "tool:eslint-plugin-security": "bash tools/eslint-plugin-security/run.sh",
+    "tool:eslint-plugin-sonarjs": "bash tools/eslint-plugin-sonarjs/run.sh",
+    "tool:jscpd": "bash tools/jscpd/run.sh",
+    "tool:lizard": "bash tools/lizard/run.sh",
+    "tool:mocha": "bash tools/mocha/run.sh",
+    "tool:npm-audit": "bash tools/npm-audit/run.sh",
+    "tool:npm-ls": "bash tools/npm-ls/run.sh",
+    "tool:nyc": "bash tools/nyc/run.sh",
+    "tool:pydriller": "bash tools/pydriller/run.sh",
+    "tool:stryker-js": "bash tools/stryker-js/run.sh"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-plugin-security": "^3.0.1",
+    "eslint-plugin-sonarjs": "^1.0.4",
+    "mocha": "^10.8.2",
+    "chai": "^4.5.0",
+    "supertest": "^6.3.4",
+    "nyc": "^17.1.0",
+    "jscpd": "^4.0.5",
+    "@stryker-mutator/core": "^8.7.1",
+    "@stryker-mutator/mocha-runner": "^8.7.1"
+  }
+}

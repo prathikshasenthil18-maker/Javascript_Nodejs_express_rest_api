@@ -1,0 +1,14 @@
+tool: pydriller
+language: javascript
+language_version: "18.0.0"
+customer_version: "18"
+project_type: "Node.js + Express REST API"
+scenario: "1 - Monolithic"
+technique: "Development Process Analysis"
+classification: "Code Churn"
+platform_tool_name: "pydriller"
+project_link: true
+run:
+  command: "bash tools/pydriller/run.sh"
+  npm_script: "pydriller"
+  cwd: "repository_root"

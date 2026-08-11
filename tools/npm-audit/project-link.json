@@ -1,0 +1,15 @@
+{
+  "tool": "npm-audit",
+  "platform_tool_name": "npm-audit",
+  "customer_version": "18",
+  "linked_project": "Node.js + Express REST API (monolith root)",
+  "npm_script": "audit",
+  "project_targets": [
+    "package.json",
+    "package-lock.json"
+  ],
+  "config_files": [
+    "package.json"
+  ],
+  "run_from": "repository root"
+}
