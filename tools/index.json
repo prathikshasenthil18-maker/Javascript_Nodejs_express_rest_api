@@ -1,0 +1,101 @@
+{
+  "project_type": "Node.js + Express REST API",
+  "scenario": "1 - Monolithic",
+  "customer_version": "21",
+  "syntax": "ES2023+ / Node.js 21",
+  "project_root_relative": ".",
+  "build": {
+    "install": "npm install",
+    "build": "npm run build",
+    "test": "npm test",
+    "start": "npm start",
+    "node_engine": ">=21",
+    "framework": "express"
+  },
+  "tools": [
+    {
+      "tool": "diff-cover",
+      "folder": "tools/diff-cover",
+      "npm_script": "diff-cover",
+      "platform_tool_name": "coverage_delta",
+      "run": "bash tools/diff-cover/run.sh"
+    },
+    {
+      "tool": "eslint",
+      "folder": "tools/eslint",
+      "npm_script": "lint",
+      "platform_tool_name": "eslint",
+      "run": "bash tools/eslint/run.sh"
+    },
+    {
+      "tool": "eslint-plugin-security",
+      "folder": "tools/eslint-plugin-security",
+      "npm_script": "lint:security",
+      "platform_tool_name": "eslint-security",
+      "run": "bash tools/eslint-plugin-security/run.sh"
+    },
+    {
+      "tool": "eslint-plugin-sonarjs",
+      "folder": "tools/eslint-plugin-sonarjs",
+      "npm_script": "lint:sonarjs",
+      "platform_tool_name": "eslint-sonarjs",
+      "run": "bash tools/eslint-plugin-sonarjs/run.sh"
+    },
+    {
+      "tool": "jscpd",
+      "folder": "tools/jscpd",
+      "npm_script": "jscpd",
+      "platform_tool_name": "jscpd-js",
+      "run": "bash tools/jscpd/run.sh"
+    },
+    {
+      "tool": "lizard",
+      "folder": "tools/lizard",
+      "npm_script": "lizard",
+      "platform_tool_name": "lizard",
+      "run": "bash tools/lizard/run.sh"
+    },
+    {
+      "tool": "mocha",
+      "folder": "tools/mocha",
+      "npm_script": "test",
+      "platform_tool_name": "nyc-mocha",
+      "run": "bash tools/mocha/run.sh"
+    },
+    {
+      "tool": "npm-audit",
+      "folder": "tools/npm-audit",
+      "npm_script": "audit",
+      "platform_tool_name": "npm-audit",
+      "run": "bash tools/npm-audit/run.sh"
+    },
+    {
+      "tool": "npm-ls",
+      "folder": "tools/npm-ls",
+      "npm_script": "ls",
+      "platform_tool_name": "npm-ls",
+      "run": "bash tools/npm-ls/run.sh"
+    },
+    {
+      "tool": "nyc",
+      "folder": "tools/nyc",
+      "npm_script": "test:coverage",
+      "platform_tool_name": "nyc-mocha",
+      "run": "bash tools/nyc/run.sh"
+    },
+    {
+      "tool": "pydriller",
+      "folder": "tools/pydriller",
+      "npm_script": "pydriller",
+      "platform_tool_name": "pydriller",
+      "run": "bash tools/pydriller/run.sh"
+    },
+    {
+      "tool": "stryker-js",
+      "folder": "tools/stryker-js",
+      "npm_script": "stryker",
+      "platform_tool_name": "stryker-js",
+      "run": "bash tools/stryker-js/run.sh"
+    }
+  ]
+}
