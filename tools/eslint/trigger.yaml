@@ -1,0 +1,14 @@
+tool: eslint
+language: javascript
+language_version: "16.0.0"
+customer_version: "16"
+project_type: "Node.js + Express REST API"
+scenario: "1 - Monolithic"
+technique: "Static Code Analysis"
+classification: "Lint / Rule Violations"
+platform_tool_name: "eslint"
+project_link: true
+run:
+  command: "bash tools/eslint/run.sh"
+  npm_script: "lint"
+  cwd: "repository_root"

@@ -1,0 +1,14 @@
+tool: npm-audit
+language: javascript
+language_version: "16.0.0"
+customer_version: "16"
+project_type: "Node.js + Express REST API"
+scenario: "1 - Monolithic"
+technique: "Dependency Risk (SCA)"
+classification: "Vulnerability Dependency Detection"
+platform_tool_name: "npm-audit"
+project_link: true
+run:
+  command: "bash tools/npm-audit/run.sh"
+  npm_script: "audit"
+  cwd: "repository_root"
