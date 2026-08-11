@@ -1,0 +1,8 @@
+{
+  "tool": "lizard",
+  "customer_version": "24",
+  "language_version": "24.0.0",
+  "syntax": "ES2024+ / Node.js 24",
+  "golden_reference": "Golden_Repo_Lite/Javascript_24.0.0/lizard",
+  "excel_source": "Final_Enterprise_Mapping_Matrix 1.xlsx / JavaScript / Node.js + Express REST API"
+}

@@ -1,0 +1,14 @@
+tool: jscpd
+language: javascript
+language_version: "24.0.0"
+customer_version: "24"
+project_type: "Node.js + Express REST API"
+scenario: "1 - Monolithic"
+technique: "Code Quality Auditing"
+classification: "Code Duplication Detection"
+platform_tool_name: "jscpd-js"
+project_link: true
+run:
+  command: "bash tools/jscpd/run.sh"
+  npm_script: "jscpd"
+  cwd: "repository_root"

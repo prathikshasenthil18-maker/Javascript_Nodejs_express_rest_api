@@ -1,0 +1,14 @@
+tool: npm-ls
+language: javascript
+language_version: "24.0.0"
+customer_version: "24"
+project_type: "Node.js + Express REST API"
+scenario: "1 - Monolithic"
+technique: "Dependency Inventory (SCA)"
+classification: "Dependency Tree"
+platform_tool_name: "npm-ls"
+project_link: true
+run:
+  command: "bash tools/npm-ls/run.sh"
+  npm_script: "ls"
+  cwd: "repository_root"

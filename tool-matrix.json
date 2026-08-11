@@ -1,0 +1,28 @@
+{
+  "language": "JavaScript",
+  "project_type": "Node.js + Express REST API",
+  "scenario": "1 - Monolithic",
+  "module": "flat (single module)",
+  "customer_version": "24",
+  "syntax": "ES2024+ / Node.js 24",
+  "syntax_notes": "Promise.withResolvers, Set methods, toSorted, Object.hasOwn",
+  "tools": [
+    "diff-cover",
+    "eslint",
+    "eslint-plugin-security",
+    "eslint-plugin-sonarjs",
+    "jscpd",
+    "lizard",
+    "mocha",
+    "npm-audit",
+    "npm-ls",
+    "nyc",
+    "pydriller",
+    "stryker-js"
+  ],
+  "tools_folder": "tools/",
+  "tools_index": "tools/index.json",
+  "source": "Final_Enterprise_Mapping_Matrix 1.xlsx / JavaScript sheet (Express rows cover 18/20/22/24; this branch uses the same Scenario-1 Express tool set)",
+  "syntax_reference": "Golden_Repo_Lite Javascript_24.0.0 + platform Node syntax notes",
+  "golden_repo_lite_folder": "Javascript_24.0.0"
+}
