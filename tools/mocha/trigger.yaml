@@ -1,0 +1,14 @@
+tool: mocha
+language: javascript
+language_version: "26.0.0"
+customer_version: "26"
+project_type: "Node.js + Express REST API"
+scenario: "1 - Monolithic"
+technique: "Control Flow Testing"
+classification: "Test Case Granularity"
+platform_tool_name: "nyc-mocha"
+project_link: true
+run:
+  command: "bash tools/mocha/run.sh"
+  npm_script: "test"
+  cwd: "repository_root"
